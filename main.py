@@ -15,8 +15,6 @@ class Record:
 
 def validate_record(record):
     validation_message = ""
-    if not record.name:
-        validation_message += f"name is missing. "
     if not record.surname:
         validation_message += f"surname is missing. "
     if len(record.phone_number) != 9:
