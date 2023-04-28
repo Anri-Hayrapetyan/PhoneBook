@@ -11,7 +11,7 @@ Python 3.x is required to run this program. There are no other dependencies.
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Run the program using the command `python main.py`.
-4. When prompted, enter the relative path to the txt file containing phone book records. The file should have the following structure:
+4. When prompted, enter the relative path to the txt file containing phone book records. You can use the already existing 'numbers.txt' file, which should have the following structure:
    
     ```
     {name} {surname} {separator} {phoneNumber}
