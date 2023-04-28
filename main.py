@@ -38,8 +38,6 @@ class PhoneBook:
                 lines = file.readlines()
                 for index, line in enumerate(lines, start=1):
                     parts = line.strip().rsplit(" ", 2)
-                    if len(parts) != 3:
-                        raise InvalidDataException(f"Invalid data in line {index}")
                     name_parts = parts[0].rsplit(" ", 1)
                     separator = parts[1][0]
                     phone_number = parts[2]
@@ -48,9 +46,6 @@ class PhoneBook:
                     self.records.append(record)
         except FileNotFoundError:
             print(f"Error: File '{file_path}' not found.")
-            exit(1)
-        except InvalidDataException as e:
-            print(str(e))
             exit(1)
 
     def sort_records(self, key_function, reverse=False):
